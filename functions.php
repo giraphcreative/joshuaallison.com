@@ -22,10 +22,5 @@ include( "library/images.php" );
 include( "library/metabox.php" );
 
 
-// include quote metaboxes/functions
-include( "library/showcase.php" );
-include( "library/content.php" );
-include( "library/social.php" );
-
 
 ?>
