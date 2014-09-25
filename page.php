@@ -4,8 +4,6 @@ get_header();
 
 ?>
 
-	<?php the_showcase(); ?>
-
 	<main class="content-narrow">
 
 		<?php 

@@ -1,0 +1,3 @@
+[submodule "css/lib/reset-css"]
+	path = css/lib/reset-css
+	url = git@github.com:shannonmoeller/reset-css.git

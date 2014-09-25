@@ -6,7 +6,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<title><?php wp_title( '|', true, 'right' ); ?> Ripon College</title>
+<title><?php wp_title( '|', true, 'right' ); ?> Joshua Allison</title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -23,25 +23,15 @@
 
 <header>
 
-	<div class="wrap">
-
-		<div class="logo">
-			<a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<img src="<?php bloginfo( "template_url" ) ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>">
-			</a>
-		</div>
-
-		<nav role="navigation">
-			<button class="menu-toggle">show/hide menu</button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-		</nav>
-	
+	<div class="logo">
+		<h1><a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">joshuallison</a></h1>
+		<h3>#purposeffect</h3>
 	</div>
 
-	<div class="search">
-		<?php get_search_form(); ?>
-	</div>
+	<nav role="navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+	</nav>
 
 </header>
 
-<section class="content">
+<main>
