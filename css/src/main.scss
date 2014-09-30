@@ -16,9 +16,50 @@ $orange: #f15a29;
 @import "fonts";
 
 
+
 // some body styles
 body {
-	@include font;
+	@include font-open;
+	font-size: 17px;
+	line-height: 22px;
+}
+
+a {
+	color: black;
+}
+
+p {
+	padding: 10px 0;
+}
+
+img, video, iframe {
+	max-width: 100%;
+}
+
+
+main {
+
+	h1, h2, h3, h4, h5 ,h6 {
+		@include font;
+		padding: 10px 0;
+	}
+
+	h2 {
+		font-size: 26px;
+		line-height: 34px;
+		text-transform: uppercase;
+		background: url(../img/border-orange.png) bottom left repeat-x;
+		margin-bottom: 10px;
+	}
+
+	h3 {
+		font-size: 22px;
+		line-height: 28px;
+		text-transform: uppercase;
+		background: url(../img/border-orange.png) bottom left repeat-x;
+		margin-bottom: 10px;
+	}
+
 }
 
 
@@ -60,8 +101,8 @@ header {
 			text-transform: uppercase;
 			
 			li {
-
 				a {
+					@include font;
 					display: block;
 					padding: 8px;
 					font-size: 20px;
@@ -116,5 +157,60 @@ header {
 	margin: 20px 0;
 	background: url(../img/bg-canvas.jpg) center center no-repeat;
 	background-size: cover;
+	padding: 20px;
+
+	.home-head-content {
+		@include wrap( 960px );
+		@include clearfix;
+	}
+
+	@include respond-to( 768px ) {
+		padding: 60px;
+	}
 }
 
+
+.home-posts {
+	margin: 20px 0;
+	background: url(../img/bg-gradient.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 20px;
+
+	@include respond-to( 768px ) { padding: 30px; }
+	@include respond-to( 1024px ) { padding: 50px; }
+
+	.home-posts-content {
+		@include wrap( 960px );
+		@include clearfix;
+	}
+	
+	h4 {
+		padding: 10px 0 0;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 13px;
+		padding: 0px 0 10px 0;
+	}
+}
+
+
+.column-half, .column-third {
+	padding: 10px 0;
+}
+
+
+@include respond-to( 768px ) {
+	.column-half, .column-third {
+		float: left;
+		padding: 0 20px;
+		margin: 0;
+	}
+	.column-half {
+		width: 50%;
+	}
+	.column-third {
+		width: 33.3%; 
+	}
+}

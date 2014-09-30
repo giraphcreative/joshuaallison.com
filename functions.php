@@ -22,5 +22,4 @@ include( "library/images.php" );
 include( "library/metabox.php" );
 
 
-
 ?>

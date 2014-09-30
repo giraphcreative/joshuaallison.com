@@ -1,5 +1,8 @@
 
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+
 @font-face {
     font-family: 'Gill Sans';
     src: url('fonts/gillsans-regular.eot');
@@ -63,7 +66,7 @@
 
 
 @mixin font {
-	font-family: "Gill Sans", sans-serif;
+    font-family: "Gill Sans", sans-serif;
 }
 
 @mixin font-bold {
@@ -76,6 +79,22 @@
 
 @mixin font-bold-italic {
     font-family: "Gill Sans Bold Italic", sans-serif;
+}
+
+@mixin font-open {
+    font-family: "Open Sans", sans-serif;
+}
+
+@mixin font-open-bold {
+    font-family: "Open Sans Bold", sans-serif;
+}
+
+@mixin font-open-italic {
+    font-family: "Open Sans Italic", sans-serif;
+}
+
+@mixin font-open-bold-italic {
+    font-family: "Open Sans Bold Italic", sans-serif;
 }
 
 @mixin font-handwriting {
