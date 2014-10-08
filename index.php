@@ -18,8 +18,10 @@ get_header(); ?>
 
 		while ( have_posts() ) : the_post();
 			?>
-			<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-			<?php the_excerpt(); ?>
+			<div class="entry-content">
+				<h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+				<?php the_excerpt(); ?>
+			</h4>
 			<?php
 		endwhile;
 		?>
