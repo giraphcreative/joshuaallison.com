@@ -6,9 +6,9 @@
 get_header();
 
 ?>
-	<div id="primary" class="site-content">
+	<div id="primary">
 
-		<div id="content" class="site-content content-narrow" role="main">
+		<div id="content" class="content-narrow" role="main">
 		<?php 
 		if ( have_posts() ) :
 			while ( have_posts() ) : the_post(); 

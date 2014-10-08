@@ -41,7 +41,7 @@ get_header();
 			while ( have_posts() ) : the_post();
 			    ?>
 			    <div class="entry">
-			    	<h4><?php the_title(); ?></h4>
+			    	<h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
 					<?php the_excerpt(); ?>
 			    </div>
 			    <?php
@@ -62,7 +62,7 @@ get_header();
 			while ( have_posts() ) : the_post();
 			    ?>
 			    <div class="entry">
-			    	<h4><?php the_title(); ?></h4>
+			    	<h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
 					<?php the_excerpt(); ?>
 			    </div>
 			    <?php
@@ -76,7 +76,7 @@ get_header();
 			<div class="column-third">
 				<h3 class="lightbulb">#purposeffect</h3>
 			<?php
-			
+			twitter_posts();
 			?>
 			</div>
 

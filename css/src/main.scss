@@ -21,7 +21,7 @@ $orange: #f15a29;
 body {
 	@include font-open;
 	font-size: 17px;
-	line-height: 22px;
+	line-height: 25px;
 }
 
 a {
@@ -42,6 +42,11 @@ main {
 	h1, h2, h3, h4, h5 ,h6 {
 		@include font;
 		padding: 10px 0;
+	}
+
+	h1 {
+		font-size: 30px;
+		line-height: 40px;
 	}
 
 	h2 {
@@ -190,7 +195,7 @@ header {
 	}
 
 	p {
-		font-size: 13px;
+		font-size: .85em;
 		padding: 0px 0 10px 0;
 	}
 }
@@ -212,5 +217,65 @@ header {
 	}
 	.column-third {
 		width: 33.3%; 
+	}
+}
+
+
+.content-narrow {
+	@include wrap( 720px );
+	padding: 30px 30px 60px;
+	color: lighten( $grey, 10% );
+
+	h1 {
+		color: $grey;
+	}
+}
+
+
+footer {
+	background: $grey;
+	color: white;
+	padding: 30px;
+
+	.copyright {
+		@include font-handwriting;
+		text-align: center;
+		padding: 10px;
+		font-size: 35px;
+		line-height: 35px;
+	}
+	
+	nav {
+		padding: 5px 10px;
+		background: url(../img/border-orange.png) top center repeat-x;
+		text-align: center;
+		@include wrap( 600px );
+
+		ul {
+			text-transform: uppercase;
+			@include clearfix;
+			
+			li {
+				display: inline;
+
+				a {
+					@include font;
+					display: block;
+					padding: 12px;
+					font-size: 20px;
+					text-decoration: none;
+					color: white;
+
+					&:hover {
+						color: lighten( $grey, 40% );
+					}
+
+					@include respond-to( 600px ) {
+						width: 20%;
+						float: left;
+					}
+				}
+			}
+		}
 	}
 }

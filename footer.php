@@ -13,7 +13,8 @@
 	</main>
 	
 	<footer class="footer fixed">
-			
+		
+		<p class="copyright">&copy; Joshuallison</p>
 		<nav role="navigation">
 			<?php wp_nav_menu( array( 
 				'theme_location' => 'footer', 

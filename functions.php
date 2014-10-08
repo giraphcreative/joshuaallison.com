@@ -22,4 +22,8 @@ include( "library/images.php" );
 include( "library/metabox.php" );
 
 
+// social media functionality
+include( "library/social.php" );
+
+
 ?>
