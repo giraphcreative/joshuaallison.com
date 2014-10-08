@@ -232,6 +232,25 @@ header {
 }
 
 
+.blog {
+	.entry-content {
+		border-top: 3px dashed lighten( $grey, 50% );
+		padding: 20px 0;
+
+		h4 {
+			padding: 0;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.1em;
+
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
 footer {
 	background: $grey;
 	color: white;
