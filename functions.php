@@ -18,10 +18,6 @@ include( "library/scripts.php" );
 include( "library/images.php" );
 
 
-// include our metaboxes library
-include( "library/metabox.php" );
-
-
 // social media functionality
 include( "library/social.php" );
 
